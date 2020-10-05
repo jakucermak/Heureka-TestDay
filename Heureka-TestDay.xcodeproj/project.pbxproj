@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9257C4AF252B916D00EB0618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257C4AE252B916D00EB0618 /* AppDelegate.swift */; };
+		9257C4B1252B916D00EB0618 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257C4B0252B916D00EB0618 /* SceneDelegate.swift */; };
+		9257C4B3252B916D00EB0618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257C4B2252B916D00EB0618 /* ViewController.swift */; };
+		9257C4B6252B916D00EB0618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9257C4B4252B916D00EB0618 /* Main.storyboard */; };
+		9257C4B8252B916D00EB0618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9257C4B7252B916D00EB0618 /* Assets.xcassets */; };
+		9257C4BB252B916D00EB0618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9257C4B9252B916D00EB0618 /* LaunchScreen.storyboard */; };
+		9257C4C6252B916E00EB0618 /* Heureka_TestDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257C4C5252B916E00EB0618 /* Heureka_TestDayTests.swift */; };
+		9257C4D1252B916E00EB0618 /* Heureka_TestDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257C4D0252B916E00EB0618 /* Heureka_TestDayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9257C4C2252B916E00EB0618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9257C4A3252B916C00EB0618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9257C4AA252B916C00EB0618;
+			remoteInfo = "Heureka-TestDay";
+		};
+		9257C4CD252B916E00EB0618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9257C4A3252B916C00EB0618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9257C4AA252B916C00EB0618;
+			remoteInfo = "Heureka-TestDay";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9257C4AB252B916C00EB0618 /* Heureka-TestDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heureka-TestDay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9257C4AE252B916D00EB0618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9257C4B0252B916D00EB0618 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9257C4B2252B916D00EB0618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9257C4B5252B916D00EB0618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9257C4B7252B916D00EB0618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9257C4BA252B916D00EB0618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9257C4BC252B916D00EB0618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9257C4C1252B916E00EB0618 /* Heureka-TestDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heureka-TestDayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9257C4C5252B916E00EB0618 /* Heureka_TestDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heureka_TestDayTests.swift; sourceTree = "<group>"; };
+		9257C4C7252B916E00EB0618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9257C4CC252B916E00EB0618 /* Heureka-TestDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heureka-TestDayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9257C4D0252B916E00EB0618 /* Heureka_TestDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heureka_TestDayUITests.swift; sourceTree = "<group>"; };
+		9257C4D2252B916E00EB0618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9257C4A8252B916C00EB0618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9257C4BE252B916E00EB0618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9257C4C9252B916E00EB0618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9257C4A2252B916C00EB0618 = {
+			isa = PBXGroup;
+			children = (
+				9257C4AD252B916C00EB0618 /* Heureka-TestDay */,
+				9257C4C4252B916E00EB0618 /* Heureka-TestDayTests */,
+				9257C4CF252B916E00EB0618 /* Heureka-TestDayUITests */,
+				9257C4AC252B916C00EB0618 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9257C4AC252B916C00EB0618 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9257C4AB252B916C00EB0618 /* Heureka-TestDay.app */,
+				9257C4C1252B916E00EB0618 /* Heureka-TestDayTests.xctest */,
+				9257C4CC252B916E00EB0618 /* Heureka-TestDayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9257C4AD252B916C00EB0618 /* Heureka-TestDay */ = {
+			isa = PBXGroup;
+			children = (
+				9257C4AE252B916D00EB0618 /* AppDelegate.swift */,
+				9257C4B0252B916D00EB0618 /* SceneDelegate.swift */,
+				9257C4B2252B916D00EB0618 /* ViewController.swift */,
+				9257C4B4252B916D00EB0618 /* Main.storyboard */,
+				9257C4B7252B916D00EB0618 /* Assets.xcassets */,
+				9257C4B9252B916D00EB0618 /* LaunchScreen.storyboard */,
+				9257C4BC252B916D00EB0618 /* Info.plist */,
+			);
+			path = "Heureka-TestDay";
+			sourceTree = "<group>";
+		};
+		9257C4C4252B916E00EB0618 /* Heureka-TestDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				9257C4C5252B916E00EB0618 /* Heureka_TestDayTests.swift */,
+				9257C4C7252B916E00EB0618 /* Info.plist */,
+			);
+			path = "Heureka-TestDayTests";
+			sourceTree = "<group>";
+		};
+		9257C4CF252B916E00EB0618 /* Heureka-TestDayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9257C4D0252B916E00EB0618 /* Heureka_TestDayUITests.swift */,
+				9257C4D2252B916E00EB0618 /* Info.plist */,
+			);
+			path = "Heureka-TestDayUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9257C4AA252B916C00EB0618 /* Heureka-TestDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9257C4D5252B916E00EB0618 /* Build configuration list for PBXNativeTarget "Heureka-TestDay" */;
+			buildPhases = (
+				9257C4A7252B916C00EB0618 /* Sources */,
+				9257C4A8252B916C00EB0618 /* Frameworks */,
+				9257C4A9252B916C00EB0618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heureka-TestDay";
+			productName = "Heureka-TestDay";
+			productReference = 9257C4AB252B916C00EB0618 /* Heureka-TestDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9257C4C0252B916E00EB0618 /* Heureka-TestDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9257C4D8252B916E00EB0618 /* Build configuration list for PBXNativeTarget "Heureka-TestDayTests" */;
+			buildPhases = (
+				9257C4BD252B916E00EB0618 /* Sources */,
+				9257C4BE252B916E00EB0618 /* Frameworks */,
+				9257C4BF252B916E00EB0618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9257C4C3252B916E00EB0618 /* PBXTargetDependency */,
+			);
+			name = "Heureka-TestDayTests";
+			productName = "Heureka-TestDayTests";
+			productReference = 9257C4C1252B916E00EB0618 /* Heureka-TestDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9257C4CB252B916E00EB0618 /* Heureka-TestDayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9257C4DB252B916E00EB0618 /* Build configuration list for PBXNativeTarget "Heureka-TestDayUITests" */;
+			buildPhases = (
+				9257C4C8252B916E00EB0618 /* Sources */,
+				9257C4C9252B916E00EB0618 /* Frameworks */,
+				9257C4CA252B916E00EB0618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9257C4CE252B916E00EB0618 /* PBXTargetDependency */,
+			);
+			name = "Heureka-TestDayUITests";
+			productName = "Heureka-TestDayUITests";
+			productReference = 9257C4CC252B916E00EB0618 /* Heureka-TestDayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9257C4A3252B916C00EB0618 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					9257C4AA252B916C00EB0618 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					9257C4C0252B916E00EB0618 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 9257C4AA252B916C00EB0618;
+					};
+					9257C4CB252B916E00EB0618 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 9257C4AA252B916C00EB0618;
+					};
+				};
+			};
+			buildConfigurationList = 9257C4A6252B916C00EB0618 /* Build configuration list for PBXProject "Heureka-TestDay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9257C4A2252B916C00EB0618;
+			productRefGroup = 9257C4AC252B916C00EB0618 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9257C4AA252B916C00EB0618 /* Heureka-TestDay */,
+				9257C4C0252B916E00EB0618 /* Heureka-TestDayTests */,
+				9257C4CB252B916E00EB0618 /* Heureka-TestDayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9257C4A9252B916C00EB0618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9257C4BB252B916D00EB0618 /* LaunchScreen.storyboard in Resources */,
+				9257C4B8252B916D00EB0618 /* Assets.xcassets in Resources */,
+				9257C4B6252B916D00EB0618 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9257C4BF252B916E00EB0618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9257C4CA252B916E00EB0618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9257C4A7252B916C00EB0618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9257C4B3252B916D00EB0618 /* ViewController.swift in Sources */,
+				9257C4AF252B916D00EB0618 /* AppDelegate.swift in Sources */,
+				9257C4B1252B916D00EB0618 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9257C4BD252B916E00EB0618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9257C4C6252B916E00EB0618 /* Heureka_TestDayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9257C4C8252B916E00EB0618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9257C4D1252B916E00EB0618 /* Heureka_TestDayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9257C4C3252B916E00EB0618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9257C4AA252B916C00EB0618 /* Heureka-TestDay */;
+			targetProxy = 9257C4C2252B916E00EB0618 /* PBXContainerItemProxy */;
+		};
+		9257C4CE252B916E00EB0618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9257C4AA252B916C00EB0618 /* Heureka-TestDay */;
+			targetProxy = 9257C4CD252B916E00EB0618 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9257C4B4252B916D00EB0618 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9257C4B5252B916D00EB0618 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9257C4B9252B916D00EB0618 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9257C4BA252B916D00EB0618 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9257C4D3252B916E00EB0618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9257C4D4252B916E00EB0618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9257C4D6252B916E00EB0618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z5D3ZTJQV;
+				INFOPLIST_FILE = "Heureka-TestDay/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakucermak.Heureka-TestDay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9257C4D7252B916E00EB0618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z5D3ZTJQV;
+				INFOPLIST_FILE = "Heureka-TestDay/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakucermak.Heureka-TestDay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9257C4D9252B916E00EB0618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z5D3ZTJQV;
+				INFOPLIST_FILE = "Heureka-TestDayTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakucermak.Heureka-TestDayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heureka-TestDay.app/Heureka-TestDay";
+			};
+			name = Debug;
+		};
+		9257C4DA252B916E00EB0618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z5D3ZTJQV;
+				INFOPLIST_FILE = "Heureka-TestDayTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakucermak.Heureka-TestDayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heureka-TestDay.app/Heureka-TestDay";
+			};
+			name = Release;
+		};
+		9257C4DC252B916E00EB0618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z5D3ZTJQV;
+				INFOPLIST_FILE = "Heureka-TestDayUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakucermak.Heureka-TestDayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Heureka-TestDay";
+			};
+			name = Debug;
+		};
+		9257C4DD252B916E00EB0618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z5D3ZTJQV;
+				INFOPLIST_FILE = "Heureka-TestDayUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakucermak.Heureka-TestDayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Heureka-TestDay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9257C4A6252B916C00EB0618 /* Build configuration list for PBXProject "Heureka-TestDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9257C4D3252B916E00EB0618 /* Debug */,
+				9257C4D4252B916E00EB0618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9257C4D5252B916E00EB0618 /* Build configuration list for PBXNativeTarget "Heureka-TestDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9257C4D6252B916E00EB0618 /* Debug */,
+				9257C4D7252B916E00EB0618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9257C4D8252B916E00EB0618 /* Build configuration list for PBXNativeTarget "Heureka-TestDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9257C4D9252B916E00EB0618 /* Debug */,
+				9257C4DA252B916E00EB0618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9257C4DB252B916E00EB0618 /* Build configuration list for PBXNativeTarget "Heureka-TestDayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9257C4DC252B916E00EB0618 /* Debug */,
+				9257C4DD252B916E00EB0618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9257C4A3252B916C00EB0618 /* Project object */;
+}

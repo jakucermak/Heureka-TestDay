@@ -9,6 +9,8 @@ import UIKit
 
 class CategoryViewCell: UICollectionViewCell {
     
+    
+    
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var containerView: UIView!
@@ -29,5 +31,6 @@ class CategoryViewCell: UICollectionViewCell {
         categoryImage.layer.borderColor = UIColor.darkGray.cgColor
         
         categoryLabel.text = label
+        
     }
 }

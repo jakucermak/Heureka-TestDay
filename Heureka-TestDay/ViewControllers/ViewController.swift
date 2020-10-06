@@ -11,6 +11,9 @@ class ViewController: UIViewController {
 
     var categories = ["Mobilní telefony","Hudební nástroje", "Ostatní"]
     var products:[String] = ["iPhone X", "iPhone Xs", "iPhone Xr Max"]
+    var selectedProduct: String?
+    
+    
     
     @IBOutlet weak var productTable: UITableView!
     @IBOutlet weak var categoryCollection: UICollectionView!
@@ -21,7 +24,15 @@ class ViewController: UIViewController {
         productTable.register(UINib(nibName: "ProductCell", bundle: nil), forCellReuseIdentifier: "productCell")
         productTable.rowHeight = 80
         productTable.tableFooterView = UIView()
+        
     }
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if segue.identifier == "productDetailSegue",
+            let detailViewController = segue.destination as? ProductDetailViewController{
+            detailViewController.selectedProduct = selectedProduct
+         }
+     }
 
 
 }
@@ -43,9 +54,15 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+            let cell = categoryCollection.cellForItem(at: indexPath) as! CategoryViewCell
+            cell.containerView.backgroundColor = cell.isSelected ? UIColor.systemBackground : UIColor.systemBlue
+            cell.isSelected = !cell.isSelected
+           return false
+        }
+    }
     
-}
-
+//MARK: - UITableView DataSource
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
@@ -57,5 +74,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedProduct = self.products[indexPath.row]
+        
+        performSegue(withIdentifier: "productDetailSegue", sender: self)
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
 }

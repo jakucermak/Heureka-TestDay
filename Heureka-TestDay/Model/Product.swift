@@ -8,5 +8,7 @@
 import Foundation
 
 class Product: Codable {
-    
+    var categoryId: Int
+    var productId: Int
+    var title: String
 }

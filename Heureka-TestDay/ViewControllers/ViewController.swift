@@ -9,10 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var categories = ["Mobilní telefony","Hudební nástroje", "Ostatní"]
+    var networkManager = NetworkManager()
+    
     var products:[String] = ["iPhone X", "iPhone Xs", "iPhone Xr Max"]
     var selectedProduct: String?
-    
     
     
     @IBOutlet weak var productTable: UITableView!
@@ -20,10 +20,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        networkManager.fetch(for: "categories", in: categoryCollection)
         productTable.register(UINib(nibName: "ProductCell", bundle: nil), forCellReuseIdentifier: "productCell")
         productTable.rowHeight = 80
         productTable.tableFooterView = UIView()
+        categoryCollection.reloadData()
         
     }
 
@@ -33,8 +34,6 @@ class ViewController: UIViewController {
             detailViewController.selectedProduct = selectedProduct
          }
      }
-
-
 }
 //MARK: - UICollection DataSource
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -44,13 +43,13 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categories.count
+        return networkManager.categories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = categoryCollection.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CategoryViewCell
         cell.sizeToFit()
-        cell.configureCell(label: categories[indexPath.item], imageName: "iphone")
+        cell.configureCell(label: networkManager.categories[indexPath.item].title, imageName: "iphone")
         return cell
     }
     

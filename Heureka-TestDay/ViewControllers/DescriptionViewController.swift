@@ -10,7 +10,6 @@ import UIKit
 class DescriptionViewController: UIViewController {
 
     @IBOutlet weak var productImage: UIImageView!
-    
     @IBOutlet weak var descriptionText: UITextView!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
@@ -19,6 +18,7 @@ class DescriptionViewController: UIViewController {
         super.viewDidLoad()
         productImage.layer.cornerRadius = productImage.frame.width/2
         containerView.layer.cornerRadius = containerView.frame.width/2
+        productImage.load(url: URL(string: "https://im9.cz/iR/importprodukt-orig/58f/58f0e6512d7f1563354e2fbb9568f2b8.jpg")!)
             }
     
 
@@ -32,4 +32,17 @@ class DescriptionViewController: UIViewController {
     }
     */
 
+}
+extension UIImageView{
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url){
+                if let image = UIImage(data: data){
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }

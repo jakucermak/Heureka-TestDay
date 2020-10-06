@@ -8,5 +8,6 @@
 import Foundation
 
 class Category: Codable {
-    
+    var categoryId: Int
+    var title: String
 }

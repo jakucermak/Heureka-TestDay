@@ -15,6 +15,9 @@
 		9257C4BB252B916D00EB0618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9257C4B9252B916D00EB0618 /* LaunchScreen.storyboard */; };
 		9257C4C6252B916E00EB0618 /* Heureka_TestDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257C4C5252B916E00EB0618 /* Heureka_TestDayTests.swift */; };
 		9257C4D1252B916E00EB0618 /* Heureka_TestDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257C4D0252B916E00EB0618 /* Heureka_TestDayUITests.swift */; };
+		9257C4EB252B94FD00EB0618 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257C4EA252B94FD00EB0618 /* CategoryViewCell.swift */; };
+		92690284252C2B71009F5CF1 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92690282252C2B71009F5CF1 /* ProductCell.swift */; };
+		92690285252C2B71009F5CF1 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92690283252C2B71009F5CF1 /* ProductCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		9257C4CC252B916E00EB0618 /* Heureka-TestDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heureka-TestDayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9257C4D0252B916E00EB0618 /* Heureka_TestDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heureka_TestDayUITests.swift; sourceTree = "<group>"; };
 		9257C4D2252B916E00EB0618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9257C4EA252B94FD00EB0618 /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
+		92690282252C2B71009F5CF1 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		92690283252C2B71009F5CF1 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,9 @@
 			children = (
 				9257C4AE252B916D00EB0618 /* AppDelegate.swift */,
 				9257C4B0252B916D00EB0618 /* SceneDelegate.swift */,
-				9257C4B2252B916D00EB0618 /* ViewController.swift */,
-				9257C4B4252B916D00EB0618 /* Main.storyboard */,
+				9269028A252C2C84009F5CF1 /* ViewControllers */,
+				92690289252C2C6D009F5CF1 /* views */,
 				9257C4B7252B916D00EB0618 /* Assets.xcassets */,
-				9257C4B9252B916D00EB0618 /* LaunchScreen.storyboard */,
 				9257C4BC252B916D00EB0618 /* Info.plist */,
 			);
 			path = "Heureka-TestDay";
@@ -126,6 +131,26 @@
 				9257C4D2252B916E00EB0618 /* Info.plist */,
 			);
 			path = "Heureka-TestDayUITests";
+			sourceTree = "<group>";
+		};
+		92690289252C2C6D009F5CF1 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9257C4B4252B916D00EB0618 /* Main.storyboard */,
+				92690283252C2B71009F5CF1 /* ProductCell.xib */,
+				9257C4B9252B916D00EB0618 /* LaunchScreen.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		9269028A252C2C84009F5CF1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9257C4B2252B916D00EB0618 /* ViewController.swift */,
+				9257C4EA252B94FD00EB0618 /* CategoryViewCell.swift */,
+				92690282252C2B71009F5CF1 /* ProductCell.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9257C4BB252B916D00EB0618 /* LaunchScreen.storyboard in Resources */,
+				92690285252C2B71009F5CF1 /* ProductCell.xib in Resources */,
 				9257C4B8252B916D00EB0618 /* Assets.xcassets in Resources */,
 				9257C4B6252B916D00EB0618 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +286,8 @@
 			files = (
 				9257C4B3252B916D00EB0618 /* ViewController.swift in Sources */,
 				9257C4AF252B916D00EB0618 /* AppDelegate.swift in Sources */,
+				92690284252C2B71009F5CF1 /* ProductCell.swift in Sources */,
+				9257C4EB252B94FD00EB0618 /* CategoryViewCell.swift in Sources */,
 				9257C4B1252B916D00EB0618 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Z5D3ZTJQV;
 				INFOPLIST_FILE = "Heureka-TestDay/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Z5D3ZTJQV;
 				INFOPLIST_FILE = "Heureka-TestDay/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

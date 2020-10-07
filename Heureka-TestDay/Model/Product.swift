@@ -7,8 +7,19 @@
 
 import Foundation
 
-class Product: Codable {
+struct Product: Codable {
     var categoryId: Int
     var productId: Int
     var title: String
+    
+    
+    var categoryImageString: String{
+        switch categoryId{
+        case 1: return "iphone"
+        case 2: return "leaf"
+        case 3: return "guitars"
+        default: return "questionmark"
+        }
+    }
+    
 }

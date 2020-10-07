@@ -15,8 +15,8 @@ class CategoryViewCell: UICollectionViewCell {
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var containerView: UIView!
     
-    func configureCell(label: String,imageName: String) {
-        categoryImage.tintColor = UIColor.black
+
+    func configureCell(label: String, imageName: String) {
         
         containerView.layer.cornerRadius = 15
         containerView.layer.shadowColor = UIColor.darkGray.cgColor
@@ -28,8 +28,8 @@ class CategoryViewCell: UICollectionViewCell {
         categoryImage.layer.cornerRadius = 15
         categoryImage.clipsToBounds = true
         categoryImage.layer.borderWidth = 2
-        categoryImage.layer.borderColor = UIColor.darkGray.cgColor
-        
+        categoryImage.layer.borderColor = UIColor.gray.cgColor
+        categoryImage.tintColor = UIColor.white
         categoryLabel.text = label
         
     }

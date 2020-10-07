@@ -14,11 +14,24 @@ class DescriptionViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     
+    var selectedOffer: Offers?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         productImage.layer.cornerRadius = productImage.frame.width/2
         containerView.layer.cornerRadius = containerView.frame.width/2
-        productImage.load(url: URL(string: "https://im9.cz/iR/importprodukt-orig/58f/58f0e6512d7f1563354e2fbb9568f2b8.jpg")!)
+        containerView.layer.shadowColor = UIColor.black.cgColor
+        containerView.layer.shadowOpacity = 0.9
+        containerView.layer.shadowRadius = 15
+        containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+        switch selectedOffer?.img_url != nil {
+        case true:
+            productImage.load(url: URL(string: (selectedOffer?.img_url)!)!)
+        default:
+            productImage.image = UIImage(systemName: "photo")
+        }
+        descriptionLabel.text = selectedOffer?.title
+        descriptionText.text = selectedOffer?.description
             }
     
 
@@ -32,17 +45,4 @@ class DescriptionViewController: UIViewController {
     }
     */
 
-}
-extension UIImageView{
-    func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url){
-                if let image = UIImage(data: data){
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
-        }
-    }
 }

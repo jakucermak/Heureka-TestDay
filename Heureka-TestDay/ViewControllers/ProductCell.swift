@@ -23,9 +23,20 @@ class ProductCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(Label: String, Image: String)  {
+    
+    func configureCell(Label: String, ID: Int)  {
+        var imageString: String{
+            switch ID {
+            case 1: return "iphone"
+            case 2: return "leaf"
+            case 3: return "guitars"
+            default: return "questionmark"
+                
+            }
+        }
         productLabel.text = Label
-        productImage.image = UIImage(systemName: Image)
+        productImage.image = UIImage(systemName: imageString)
+        productImage.tintColor = UIColor.black
     }
     
 }

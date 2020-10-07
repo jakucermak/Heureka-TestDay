@@ -15,3 +15,4 @@ struct Offers: Codable {
     var title: String
     var url: String
 }
+

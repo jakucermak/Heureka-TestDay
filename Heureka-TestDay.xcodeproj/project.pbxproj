@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92377175252C46AC001339E8 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92377174252C46AC001339E8 /* ProductDetailViewController.swift */; };
+		92377175252C46AC001339E8 /* OffersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92377174252C46AC001339E8 /* OffersDetailViewController.swift */; };
 		9237717B252C5CB6001339E8 /* OfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92377179252C5CB5001339E8 /* OfferCell.swift */; };
 		9237717C252C5CB6001339E8 /* OfferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9237717A252C5CB6001339E8 /* OfferCell.xib */; };
 		9237718A252C8C78001339E8 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92377189252C8C78001339E8 /* DescriptionViewController.swift */; };
@@ -46,7 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		92377174252C46AC001339E8 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		92377174252C46AC001339E8 /* OffersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersDetailViewController.swift; sourceTree = "<group>"; };
 		92377179252C5CB5001339E8 /* OfferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCell.swift; sourceTree = "<group>"; };
 		9237717A252C5CB6001339E8 /* OfferCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferCell.xib; sourceTree = "<group>"; };
 		92377189252C8C78001339E8 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
@@ -123,9 +123,10 @@
 			children = (
 				9257C4AE252B916D00EB0618 /* AppDelegate.swift */,
 				9257C4B0252B916D00EB0618 /* SceneDelegate.swift */,
+				92EBC8F5252CBC2C00E32F67 /* NetworkManager.swift */,
 				9269028A252C2C84009F5CF1 /* ViewControllers */,
 				92690298252C3E44009F5CF1 /* Model */,
-				92690289252C2C6D009F5CF1 /* views */,
+				92690289252C2C6D009F5CF1 /* Views */,
 				9257C4B7252B916D00EB0618 /* Assets.xcassets */,
 				9257C4BC252B916D00EB0618 /* Info.plist */,
 			);
@@ -150,7 +151,7 @@
 			path = "Heureka-TestDayUITests";
 			sourceTree = "<group>";
 		};
-		92690289252C2C6D009F5CF1 /* views */ = {
+		92690289252C2C6D009F5CF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				9257C4B4252B916D00EB0618 /* Main.storyboard */,
@@ -158,19 +159,18 @@
 				9237717A252C5CB6001339E8 /* OfferCell.xib */,
 				9257C4B9252B916D00EB0618 /* LaunchScreen.storyboard */,
 			);
-			path = views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9269028A252C2C84009F5CF1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				9257C4B2252B916D00EB0618 /* ViewController.swift */,
-				92377174252C46AC001339E8 /* ProductDetailViewController.swift */,
+				92377174252C46AC001339E8 /* OffersDetailViewController.swift */,
 				92377179252C5CB5001339E8 /* OfferCell.swift */,
 				9257C4EA252B94FD00EB0618 /* CategoryViewCell.swift */,
 				92690282252C2B71009F5CF1 /* ProductCell.swift */,
 				92377189252C8C78001339E8 /* DescriptionViewController.swift */,
-				92EBC8F5252CBC2C00E32F67 /* NetworkManager.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -325,7 +325,7 @@
 				9257C4EB252B94FD00EB0618 /* CategoryViewCell.swift in Sources */,
 				9257C4B1252B916D00EB0618 /* SceneDelegate.swift in Sources */,
 				92EBC8F1252CB7A700E32F67 /* Offers.swift in Sources */,
-				92377175252C46AC001339E8 /* ProductDetailViewController.swift in Sources */,
+				92377175252C46AC001339E8 /* OffersDetailViewController.swift in Sources */,
 				9269028F252C3E2E009F5CF1 /* Category.swift in Sources */,
 				92690294252C3E3D009F5CF1 /* Product.swift in Sources */,
 				9237717B252C5CB6001339E8 /* OfferCell.swift in Sources */,

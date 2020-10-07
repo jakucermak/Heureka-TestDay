@@ -36,7 +36,7 @@ class ProductCell: UITableViewCell {
         }
         productLabel.text = Label
         productImage.image = UIImage(systemName: imageString)
-        productImage.tintColor = UIColor.black
+        
     }
     
 }

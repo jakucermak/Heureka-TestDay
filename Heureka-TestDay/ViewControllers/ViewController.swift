@@ -57,7 +57,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
     
     func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
             let cell = categoryCollection.cellForItem(at: indexPath) as! CategoryViewCell
-            cell.containerView.backgroundColor = cell.isSelected ? UIColor.systemBackground : UIColor.systemBlue
+        cell.containerView.backgroundColor = cell.isSelected ? UIColor.systemBackground : UIColor(named: "LightBlue")
             cell.isSelected = !cell.isSelected
         if cell.isSelected{
             categoryFilter.append(networkManager.categories[indexPath.row].categoryId)
@@ -99,10 +99,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         
     }
     
+    //MARK: - Filter Products
     func filterProducts(products: [Product])->[Product]{
         var filteredProducts: [Product] = []
         products
             .map{product in
+                
                 for i in categoryFilter{
                     if product.categoryId == i{
                         filteredProducts.append(product)
